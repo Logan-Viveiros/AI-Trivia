@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Trivia</title>
+</head>
+
+<body>
+
+
+
+    <div id="menu-container">
+        <input type="text" id="category-input" placeholder="Enter quiz prompt" />
+        <button id="add-context-btn">Add Context</button>
+        <textarea id="context-textarea" placeholder="Enter context here..." style="display: none;"></textarea>
+        <input type="number" id="questions-input" placeholder="10" min="1" max="25" />
+        <button id="start-btn">Start Quiz</button>
+        <!--<div id="previous-attempts">-->
+        <!--    <h3>Previous Attempts</h3>-->
+        <!--    <ul id="attempts-list"></ul>-->
+        <!--</div>-->
+    </div>
+
+    <div id="quiz-container" hidden="hidden">
+        <div id="score">Score: 0</div>
+        <div id="question-container" class="question-container">
+            <a id="question"></a>
+            <div id="answer-btns"></div>
+        </div>
+        <button id="end-quiz-btn">End Quiz</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
